@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Banco</title>
+</head>
+<body>
+ 
+<h2>Banco</h2>
+
+<p><b>Saldo actual:</b> <span id="saldo">0</span> €</p>
+   <div class="saldo">
+            Saldo disponible: <span id="saldoActual">0</span>€
+        </div>
+<h3>Ingresar dinero</h3>
+<input type="number" id="ingreso" step="0.01" placeholder="Cantidad">
+<button onclick="ingresar()">Ingresar</button>
+<p id="errorIngreso"></p>
+
+<h3>Retirar dinero</h3>
+<input type="number" id="retiro" step="0.01" placeholder="Cantidad">
+<button onclick="retirar()">Retirar</button>
+<p id="errorRetiro"></p>
+
+<h3>Invertir dinero</h3>
+<input type="number" id="inversion" step="0.01" placeholder="Cantidad para invertir">
+<button onclick="invertir()">Calcular inversión</button>
+<p id="errorInversion"></p>
+<h3>Evolución de la inversión (12 meses)</h3>
+<div id="resultado"></div>
+
+<script src="Examen.js"></script>
+</body>
+</html>
